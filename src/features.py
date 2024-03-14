@@ -19,7 +19,7 @@ from sklearn.preprocessing import OrdinalEncoder
 import json
 
 if __name__ == "__main__":
-    file = "../data/dpe-v2-tertiaire-2.csv"
+    file = "./data/dpe-v2-tertiaire-2.csv"
     data = pd.read_csv(file)
 
     columns = data.columns.copy()
@@ -175,7 +175,7 @@ if __name__ == "__main__":
 
     # Save the mappings to a JSON file
 
-    with open("../data/categorical_mappings.json", "w", encoding="utf-8") as f:
+    with open("./data/categorical_mappings.json", "w", encoding="utf-8") as f:
         json.dump(mappings, f, ensure_ascii=False, indent=4)
 
     columns_dates = ["date_visite_diagnostiqueur"]
@@ -251,4 +251,4 @@ if __name__ == "__main__":
 
     # alt
 
-    data.to_csv("../data/dpe_tertiaire_20240307.csv", index=False)
+    data.to_csv("./data/dpe_tertiaire_20240307.csv", index=False)
