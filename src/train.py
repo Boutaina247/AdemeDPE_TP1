@@ -17,8 +17,8 @@ import json
 import datetime
 
 # load data
-input_file = ("dpe_tertiaire_20240307.csv")
-data = pd.read_csv("dpe_tertiaire_20240307.csv")
+input_file = ("./data/dpe_tertiaire_20240307.csv")
+data = pd.read_csv("./data/dpe_tertiaire_20240307.csv")
 # shuffle
 data = data.sample(frac=1, random_state=808).reset_index(drop=True)
 
