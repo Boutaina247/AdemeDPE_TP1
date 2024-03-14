@@ -19,7 +19,7 @@ from sklearn.preprocessing import OrdinalEncoder
 import json
 
 if __name__ == "__main__":
-    file = "../data/original/dpe-v2-tertiaire-2.csv"
+    file = "../data/dpe-v2-tertiaire-2.csv"
     data = pd.read_csv(file)
 
     columns = data.columns.copy()
